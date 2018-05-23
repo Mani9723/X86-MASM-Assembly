@@ -85,7 +85,7 @@ fillarray PROC
 		pop eax
 		call readInt
 		.IF eax > 200 || eax < 0
-			mWrite "ERROR: Value > 200 or Values < 0"
+			mWrite "ERROR: 0 < Value <= 200"
 			call crlf
 			dec num
 			jmp l1
